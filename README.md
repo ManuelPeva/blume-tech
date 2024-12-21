@@ -22,5 +22,11 @@ funciones
 ![image](https://github.com/user-attachments/assets/16cc7282-a297-45c7-957b-250080bcb4d9)
 
 
+En proceso.......
+
+![image](https://github.com/user-attachments/assets/643b7fb3-1c01-4572-b6d2-c58b77e730f2)
+
+
+
 
 
