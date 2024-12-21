@@ -1,0 +1,47 @@
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fade-in 0.5s forwards, fade-out 0.5s linear forwards;
+  }
+  
+  .alert-success {
+    background-color: #4caf50; /* Verde */
+  }
+  
+  .alert-error {
+    background-color: #f44336; /* Rojo */
+  }
+  
+  .alert-info {
+    background-color: #2196f3; /* Azul */
+  }
+  
+  .alert-warning {
+    background-color: #ff9800; /* Naranja */
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  

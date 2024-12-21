@@ -1,0 +1,30 @@
+/* General Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+   
+  }
+  

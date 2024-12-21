@@ -1,0 +1,24 @@
+.efecto{
+    text-align: center; 
+font-family: Arial Black; 
+font-weight: bold;  
+background: #202020; 
+-webkit-background-clip: text; 
+-moz-background-clip: text; 
+background-clip: text; 
+color: transparent; 
+text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4),0px -1px 1px rgba(0, 0, 0, 0.432);
+}
+
+.card-text{
+    text-align: left;
+}
+
+.card-descrip{
+    text-align: justify;
+}
+
+body{
+    background-image: url("");
+    background-repeat: no-repeat;
+}
