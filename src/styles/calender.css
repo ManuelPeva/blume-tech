@@ -1,0 +1,12 @@
+.current-day {
+    background-color: #4BC7B5;
+    color: white; /* Opcional, para contraste */
+    border-radius: 50%; /* Opcional, para darle forma redonda */
+}
+
+.marked-day {
+    background-color: #4BC7B5;
+    color: white; /* Opcional */
+}
+
+

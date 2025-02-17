@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import side from "../assets/side.jpg";
 import perfil from "../assets/Perlita.jpg";
-import Contenido from "../components/Contenido";
-import TicketForm from "../components/TicketForm";
-
+import logo from "../assets/logo.png"
+import "../styles/dashboard.css"
 
 function Dashboard() {
   const { user, logout } = useAuth();
@@ -80,7 +79,7 @@ function Dashboard() {
       {/* Menú de Opciones */}
       <ul className="mt-4 flex-grow">
         <Link to="/tiket"> <li className="p-4 hover:bg-teal-900 cursor-pointer">Generar ticket</li> </Link>
-        <li className="p-4 hover:bg-teal-900 cursor-pointer">Perfil</li>
+        <Link to="/calender"> <li className="p-4 hover:bg-teal-900 cursor-pointer">Calendario</li> </Link>
         <li className="p-4 hover:bg-teal-900 cursor-pointer">Configuración</li>
       </ul>
 
@@ -102,13 +101,43 @@ function Dashboard() {
   </div>
 
   {/* Contenido Principal */}
+  
   <div className={`ml-0 md:ml-${isOpen ? '64' : '0'} p-4 transition-all duration-300`}>
-    <h1 className="text-2xl font-bold">Bienvenido a la página principal</h1>
-    <p>Este es el contenido principal de la página.</p>
+  
+     <img
+            src={logo}
+            alt="Logo"
+            className="w-20 h-15 mx-auto rounded-full shadow-lg shadow-gray-500/50 "
+          />
+    <h2 className="blume">Blume - Tech</h2>
+    <div className="grid grid-cols-2 gap-4">
+  
+  <button className=" flex flex-col items-center bg-blue-500 p-4 rounded-lg shadow-lg  shadow-gray-500/50">
+    <img src="imagen1.jpg" alt="Imagen 1" className="w-16 h-16 mb-2"/>
+    <span className="text-white">Botón 1</span>
+  </button>
+
+  <button className="flex flex-col items-center bg-blue-500 p-4 rounded-lg shadow-lg shadow-gray-500/50 ">
+    <img src="imagen2.jpg" alt="Imagen 2" className="w-16 h-16 mb-2"/>
+    <span className="text-white">Botón 2</span>
+  </button>
+
+
+  <button className="flex flex-col items-center bg-blue-500 p-4 rounded-lg shadow-lg shadow-gray-500/50">
+    <img src="imagen3.jpg" alt="Imagen 3" className="w-16 h-16 mb-2"/>
+    <span className="text-white">Botón 3</span>
+  </button>
+
+  <button className="flex flex-col items-center bg-blue-500 p-4 rounded-lg shadow-lg shadow-gray-500/50">
+    <img src="imagen4.jpg" alt="Imagen 4" className="w-16 h-16 mb-2"/>
+    <span className="text-white">Botón 4</span>
+  </button>
+</div>
   
   </div>
 
 </div>
+
   );
 }
 

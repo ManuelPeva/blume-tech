@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./routes/ProtectedRoute"; //
 import TicketForm from "./components/TicketForm";
+import Calender from "./pages/Calender";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             }
           />
           <Route path="/tiket" element={<ProtectedRoute><TicketForm/></ProtectedRoute>} />
+          <Route path="/calender" element={<ProtectedRoute><Calender/></ProtectedRoute>} />
 
           {/* Redirige cualquier otra ruta al login */}
           <Route path="*" element={<Navigate to="/login" />} />
