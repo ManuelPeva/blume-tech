@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import SignatureCanvas from "react-signature-canvas";
 import logo from "../assets/logo.png";

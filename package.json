@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -18,6 +20,7 @@
     "cally": "^0.7.2",
     "canvas-confetti": "^1.9.3",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^6.3.0",
     "html2canvas": "^1.4.1",
     "html2pdf.js": "^0.10.2",
     "react": "^18.3.1",
@@ -28,8 +31,7 @@
     "react-to-print": "^3.0.2",
     "react-toastify": "^10.0.6",
     "sweetalert2": "^11.14.5",
-    "tiket": "file:",
-    "vite": "^6.1.0"
+    "tiket": "file:"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
@@ -44,7 +46,8 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.16"
+    "tailwindcss": "^3.4.16",
+    "vite": "^6.1.0"
   },
   "engines": {
     "node": ">=14.0.0"
